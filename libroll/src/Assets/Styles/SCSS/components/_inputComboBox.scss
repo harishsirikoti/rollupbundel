@@ -1,0 +1,42 @@
+// combobox
+.ms-ComboBox {
+  &:after {
+    border: 1px solid var(--neutral-5);
+    border-radius: var(--input-border-radius);
+    &:focus,
+    &:active {
+      border-color: var(--primary-7);
+      box-shadow: 0px 3px 6px #22222229;
+    }
+  }
+  &:hover {
+    border-color: var(--primary-7);
+    &:after {
+      border-color: var(--primary-7);
+    }
+  }
+  &:focus {
+    &:after {
+      border: 1px solid var(--primary-7);
+    }
+  }
+  &-container {
+    .ms-ComboBox-Input {
+      background: transparent;
+    }
+  }
+}
+
+.ms-Dropdown.is-disabled {
+  border: 1px solid var(--neutral-5);
+  border-radius: var(--input-border-radius);
+  pointer-events: none;
+}
+.ms-ComboBox.is-disabled {
+  border: 1px solid var(--neutral-5);
+  border-radius: var(--input-border-radius);
+  pointer-events: none;
+  :hover{
+    border: 1px solid var(--neutral-5);
+  }
+}

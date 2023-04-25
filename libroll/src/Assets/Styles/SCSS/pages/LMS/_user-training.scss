@@ -1,0 +1,21 @@
+.training-wrapper {
+  flex-direction: column;
+  overflow: scroll;
+  margin-bottom: 2em;
+
+  .training-fit,
+  .training-name,
+  p {
+    padding: 10px 0px;
+  }
+
+  .training-fit {
+    font-weight: 500;
+  }
+
+  .ms-DetailsList .ms-DetailsHeader {
+    font-weight: 600;
+  }
+}
+
+

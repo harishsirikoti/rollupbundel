@@ -1,0 +1,43 @@
+.ms-Dialog.confrimDialog { 
+    
+    .ms-Dialog-title{
+        padding: 0;
+        font-size: var(--fs-16);
+        font-weight: 600;
+    }
+    .ms-Dialog-inner {
+        background-color: var(--neutral-1);
+        padding-bottom: 16px;
+        padding: 10px;
+        .ms-Dialog-content { 
+            text-align: center; 
+            .deleteIcon {
+                .ms-Icon {
+                    font-size: 56px;
+                    position: absolute;
+                    color: var(--denger);
+                }
+            }
+            .ms-Dialog-title {
+                display: none;
+            }
+        } 
+        .ms-Dialog-subText {
+            padding: 0 3rem;
+        }
+        .ms-Dialog-header {
+            display: none;
+        }
+    }
+    .ms-Dialog-header {
+        background-color: var(--neutral-2);
+        padding: 22px 26px;
+        font-size: var(--fs-14);
+        .ms-Dialog-button--close {
+            display: block;
+        }
+    }
+}
+.ms-Dialog .ms-Dialog-header .ms-Dialog-button--close {
+    display: block;
+}

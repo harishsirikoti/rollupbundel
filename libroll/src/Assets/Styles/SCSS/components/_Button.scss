@@ -1,0 +1,78 @@
+/* 
+
+extra sizes of button className
+.ms-Button--small
+.ms-Button--medium
+
+*/
+
+.ms-Button {
+  text-transform: capitalize;
+  // Default buttons styles
+  &--primary {
+    background: var(--primary-7);
+    color: var(--primary-1);
+    font-size: var(--fs-14);
+    font-weight: normal;
+    border-radius: var(--btn-border-radius);
+    border-color:var(--primary-7);;
+    height: 40px;
+    &:focus,
+    &:hover {
+      background-color: var(--primary-6);
+    }
+    &:active {
+      background-color: var(--primary-9);
+    }
+    &.is-disabled {
+      background: var(--neutral-3);
+      color: var(--neutral-6) !important;
+      opacity: 1 !important;
+    }
+  }
+
+  // Default buttons styles
+  &--default {
+    height: 40px;
+    background-color: rgba(var(--alpha), 0.9);
+    color: var(--primary-7);
+    font-size: var(--fs-16);
+    font-weight: normal;
+    border: none;
+    border-radius: var(--btn-border-radius);
+
+    &:focus,
+    &:hover {
+      background-color: var(--neutral-1);
+    }
+    &:active {
+      background-color: rgba(var(--alpha), 0.8);
+    }
+    &.is-disabled {
+      background: var(--neutral-6);
+      color: var(--neutral-3);
+      opacity: 1 !important;
+    }
+  }
+  .ms-Button-icon,
+  .ms-Icon {
+    color: inherit;
+  }
+  .ms-Button-label {
+    font-weight: inherit;
+  }
+  &:hover {
+    .ms-Button-icon,
+    .ms-Icon {
+      color: inherit;
+      background: transparent;
+    }
+  }
+  // sizes of buttons
+  &.medium {
+    height: 34px;
+  }
+  &.small {
+    height: 34px;
+  }
+}

@@ -1,0 +1,54 @@
+$color_1: var(--label-color);
+$background-color_1: var(--text-white);
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--footer-background);
+  padding: 2px 26px;
+  height: 36px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  &__left {
+    color: var(--netural-7);
+  }
+  &__center {
+    .logo {
+      max-width: 80px;
+      display: flex;
+      img {
+        width: 100%;
+      }
+    }
+  }
+  &__right {
+    display: flex;
+    gap: 10px;
+    a {
+      display: flex;
+      gap: 10px;
+      color: var(--netural-7);
+      text-decoration: underline;
+      border-right: 1px solid var(--primary-5);
+      padding-right: 8px;
+      margin-right: 4px;
+      cursor: pointer;
+      font-style: normal; 
+      &:last-child {
+        border-right: 0;
+        padding-right: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  &.theme-primary {
+    background-color: var(--primary-7);
+    color: var(--primary-1);
+    a{
+      color: var(--primary-1);
+    }
+  }
+ 
+}

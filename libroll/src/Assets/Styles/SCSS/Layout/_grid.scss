@@ -1,0 +1,30 @@
+.grid {
+    display: flex;
+    &--row {
+        flex-direction: row;   
+    }
+    &--row-reverse {
+        flex-direction: row-reverse;   
+    }
+    &--column {
+        flex-direction: column;   
+    }
+    &--flex-start {
+        align-items: flex-start;
+    }
+    &--space-between {
+        justify-content: space-between;
+    }
+}
+
+.width {
+    &--fill {
+        width: 100%;
+    }
+}
+
+.height {
+    &--full {
+        height: 100%;
+    }
+}

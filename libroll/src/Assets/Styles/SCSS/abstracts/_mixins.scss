@@ -1,0 +1,11 @@
+@use "breakpoints" as *;
+
+@mixin media-scroll($value) {
+  height: calc(100vh - $value);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.font-icon{
+  font-family: "Fabric External MDL2 Assets";
+}

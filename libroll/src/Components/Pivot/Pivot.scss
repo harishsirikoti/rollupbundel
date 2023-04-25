@@ -1,0 +1,176 @@
+.ms-Pivot .ms-Button {
+    &:hover {
+        background-color: transparent;
+    }
+
+    .ms-Button-flexContainer > span {
+        display: flex;
+        align-items: end;
+    }
+}
+.pivot {
+    border-bottom: 1px solid #f3f2f1;
+    background: none;
+    .ms-Pivot > .ms-Button {
+        margin: 0;
+        padding-right: 20px;
+
+        &:hover {
+            background-color: transparent;
+            color: var(--primary-color);
+        }
+    }
+
+    .ms-Pivot > .ms-Button.is-selected {
+        font-weight: normal;
+        font-size: var(--fs-14);
+    }
+
+    .ms-Pivot-icon {
+        margin-right: 10px;
+    }
+
+    .ms-Pivot-link .ms-Pivot-text {
+        font-weight: normal;
+    }
+
+    .ms-Pivot > .ms-Button:last-child {
+        margin: 0;
+    }
+
+    .ms-Pivot > .ms-Button.is-selected:before {
+        left: 8px;
+        right: 20px;
+    }
+
+    &--small {
+        .ms-Pivot > .ms-Button {
+            height: 38px;
+        }
+    }
+
+    &--medium {
+        .ms-Pivot > .ms-Button {
+            height: 46px;
+        }
+    }
+
+    &--large {
+        .ms-Pivot > .ms-Button {
+            height: 52px;
+        }
+    }
+
+    &--no-background {
+        .ms-Pivot {
+            background-color: transparent;
+        }
+    }
+
+    &--white-background {
+        .ms-Pivot > .ms-Button {
+            background-color: var(--neutral-2);
+            padding-left: 0;
+            border-radius: 0;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+
+        .ms-Pivot > .ms-Button.is-selected:before {
+            left: 0;
+        }
+
+        .ms-Pivot > .ms-Button.is-selected:last-child {
+            right: 0;
+
+            &::before {
+                right: 0;
+            }
+        }
+    }
+
+    &--dark-color {
+        .ms-Pivot > .ms-Button {
+            color: var(--neutral-9);
+        }
+    }
+
+    &--primary-color {
+        .ms-Pivot > .ms-Button {
+            color: var(--primary-color);
+        }
+    }
+
+    &--light-color {
+        .ms-Pivot > .ms-Button {
+            color: var(----neutral-6);
+        }
+    }
+
+    &--no-underline {
+        .ms-Pivot > .ms-Button.is-selected:before {
+            background-color: transparent;
+        }
+    }
+
+    &--border {
+        .ms-Pivot > .ms-Button.is-selected {
+            background-color: var(--neutral-1);
+            color: var(--primary-color);
+            margin-right: 10px;
+            &:hover {
+                &::before {
+                    background-color: var(--neutral-1);
+                }
+            }
+        }
+
+        .ms-Pivot > .ms-Button,
+        .ms-Pivot > .ms-Button.is-selected {
+            border: 1px solid var(--light-gray);
+            border-top-left-radius: 5px;
+            position: relative;
+            border-right: transparent;
+            border-bottom-left-radius: 0;
+            margin-right: 10px;
+            &:hover {
+                &::before {
+                    background-color: var(--neutral-1);
+                }
+            }
+            &::before {
+                background-color: var(--neutral-2);
+                top: -1px;
+                height: 104%;
+                width: 20px;
+                margin-left: auto;
+                right: -5px;
+                position: absolute;
+                -webkit-transform: skew(12deg);
+                -moz-transform: skew(20deg);
+                -o-transform: skew(20deg);
+                border: 1px solid var(--light-gray);
+                border-left: transparent;
+            }
+        }
+        .ms-Pivot > .ms-Button.is-selected:before {
+            background-color: var(--neutral-1);
+        }
+    }
+
+    &--icon-right {
+        .ms-Pivot > .ms-Button {
+            .ms-Button-flexContainer {
+                .ms-Pivot-linkContent {
+                    display: flex;
+                    flex-direction: row-reverse;
+
+                    .ms-Pivot-icon {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

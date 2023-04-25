@@ -1,0 +1,24 @@
+.viewOptionLabel {
+  display: flex;
+  flex-direction: column;
+  label {
+    font-size: var(--fs-14);
+    color: var(--neutral-10);
+    font-weight: var(--fw-600);
+    padding: 3px 0;
+  }
+  .options,
+  .ms-Persona-primaryText {
+    color: var(--neutral-9);
+    font-size: var(--fs-14);
+    padding: 0 0 4px;
+  }
+  .ms-Persona {
+    margin-bottom: 10px;
+  }
+  .linkBtn {
+    margin-top: 4px;
+    display: flex;
+    padding: 8px 0;
+  }
+}

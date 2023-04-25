@@ -1,0 +1,25 @@
+input[type="number"] {
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    outline: 1px solid var(--neutral-5);
+    border-top-right-radius: var(--input-border-radius);
+    border-bottom-right-radius: var(--input-border-radius);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transform-origin: right center;
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 0 0.2rem;
+    margin: 1px;
+    // filter: invert(1%) sepia(100%) saturate(19%) hue-rotate(296deg)
+    //   brightness(105%) contrast(106%);
+  }
+  &:hover {
+    &::-webkit-inner-spin-button {
+      outline: 1px solid var(--primary-7);
+    }
+  }
+}

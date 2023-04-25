@@ -1,0 +1,8 @@
+/* 
+Disabled styles for inputs
+*/
+input:disabled {
+  background: var(--neutral-3);
+  border: 1px solid var(--neutral-5);
+  border-radius: var(--input-border-radius);
+}

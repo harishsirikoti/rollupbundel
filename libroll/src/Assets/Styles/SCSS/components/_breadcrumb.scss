@@ -1,0 +1,116 @@
+/* 
+
+Breadcrumb 
+
+*/
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1.8em;
+  position: relative;
+
+  &__left {
+    width: 100%;
+    text-align: left;
+    &__title {
+      color: var(--primary-1);
+      text-transform: capitalize;
+    }
+    &__nav {
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      a ~ div{
+        flex:1 1 auto;
+        display: flex;
+      }
+      .ms-Button {
+        color: var(--neutral-6);
+        border-radius: var(--border-radius);
+        background: transparent;
+        font-weight: 600;
+        font-size: 1em;
+        top: 0.2em;
+        padding: 0px 1px;
+        .pending-documents {
+          display: none;
+        }
+        &:hover {
+          background: transparent;
+          color: var(--primary-1);
+        }
+      }
+      .ms-Link.ms-Breadcrumb-itemLink:last-child{
+        color: var(--neutral-6);
+        &:hover {
+          background: transparent;
+          color: var(--primary-1);
+        }
+      }
+      .ms-Link {
+        color: var(--neutral-6);
+        border-radius: var(--border-radius);
+        background: transparent;
+        font-weight: 600;
+        font-size: 1em;
+        // top: 0.5em;
+        padding: 0px 1px;
+        .pending-documents {
+          display: none;
+        }
+        &:hover {
+          background: transparent;
+          color: var(--primary-1);
+        }
+      }
+      .ms-Breadcrumb-listItem:last-child {
+        .ms-Breadcrumb-item {
+          color: var(--primary-1);
+        }
+      }
+      .ms-Breadcrumb-item {
+        font-size: 1em;
+        line-height: inherit;
+        color: var(--neutral-6);
+        &:hover {
+          color: var(--primary-1);
+        }
+      }
+    }
+    &_links {
+      width: 100%;
+      display: flex;
+    }
+  }
+  &__right {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    .Bread_actions{
+      width: 100%;
+      display: flex;
+      justify-content: end;
+    }
+  }
+}
+.nolinks{
+  .breadcrumb__left__nav{
+    display: none;
+  }
+}
+
+.no-breadcrumb{
+  .breadcrumb__left__nav{
+    // display: none;
+  }
+}
+.breadcrumb-pendingDocuments {
+  .breadcrumb__left__nav{
+    a{
+      button.ms-Button.ms-Button--icon{
+        display: none;
+      }
+    }
+  }
+}

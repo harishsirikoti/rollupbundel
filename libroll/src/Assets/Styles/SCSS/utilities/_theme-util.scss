@@ -1,0 +1,87 @@
+@use "../themes/theme" as *;
+
+.theme-dark {
+  @each $color-name, $values in $theme-dark {
+    @each $shade-name, $shade-value in $values {
+      --#{$color-name}-#{$shade-name}: #{$shade-value};
+    }
+  }
+  --main-bg: #1c1a2e;
+  --card-bg: #232232;
+
+  .gradient-primary {
+    background: #030852;
+    background: linear-gradient(
+      90deg,
+      rgba(43, 17, 104, 1) 0%,
+      rgba(9, 9, 121, 1) 49%,
+      rgba(30, 55, 191, 1) 100%
+    );
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(
+      90deg,
+      rgba(43, 17, 104, 1) 0%,
+      rgba(9, 9, 121, 1) 49%,
+      rgba(30, 55, 191, 1) 100%
+    );
+  }
+}
+.theme-default {
+  @each $color-name, $values in $theme-default {
+    @each $shade-name, $shade-value in $values {
+      --#{$color-name}-#{$shade-name}: #{$shade-value};
+    }
+  }
+
+  --main-bg: #f0f0f0;
+  --card-bg: #fff;
+
+  // Default color
+  /* 
+  #2b1168
+  #090979
+   */
+  .gradient-primary {
+    background: #1D39C4;
+    background: linear-gradient(
+      0deg,
+      rgba(43, 17, 104, 1) 0%,
+      rgba(9, 9, 121, 1) 49%,
+      rgba(30, 55, 191, 1) 100%
+    );
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(
+      0deg,
+      rgba(43, 17, 104, 1) 0%,
+      rgba(9, 9, 121, 1) 49%,
+      rgba(30, 55, 191, 1) 100%
+    );
+  }
+}
+
+// $sizes: 40px, 50px, 80px;
+// @each $size in $sizes {
+//   .icon-#{$size} {
+//     font-size: $size;
+//     height: $size;
+//     width: $size;
+//   }
+// }
+
+// :root {
+//   @each $color-name, $values in $theme-default {
+//     @each $shade-name, $shade-value in $values {
+//       --#{$color-name}-#{$shade-name}: #{$shade-value};
+//     }
+//   }
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     @each $color-name, $values in $dark-theme {
+//       @each $shade-name, $shade-value in $values {
+//         --#{$color-name}-#{$shade-name}: #{$shade-value};
+//       }
+//     }
+//   }
+// }

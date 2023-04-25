@@ -1,0 +1,24 @@
+@use "../../abstracts/mixins" as *;
+// .requestType .layout-grid__main--container{
+//     @include media-scroll(430px);
+// }
+.requestType .layout-grid__main--container{
+    @include media-scroll(414px);
+    overflow: hidden;
+}
+
+.requestType .ms-DetailsList .ms-DetailsList-contentWrapper{
+   height: calc(100vh - 510px);
+}
+
+.layout-grid__main--container.general{
+    padding: 12px 1.6rem;
+}
+
+.layout-grid__main--container.document{
+    padding: 10px  1.6rem;
+}
+
+.layout-grid__main--container.userRoles{
+    padding: 3px  1.6rem;
+}

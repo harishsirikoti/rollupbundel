@@ -1,0 +1,11 @@
+.page-NotFound{
+    background-color: var(--neutral-3);
+    color: var(--neutral-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    h3{
+        color: var(--neutral-5);
+    }
+}

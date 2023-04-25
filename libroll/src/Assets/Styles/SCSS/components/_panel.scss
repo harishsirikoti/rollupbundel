@@ -1,0 +1,25 @@
+.ms-Overlay{
+   // background-color: rgba(0, 0, 0, 0.4);
+}
+.ms-Panel{
+    margin-top: 56px;
+}
+
+.ms-Panel{
+    &-contentInner, &-footer, &-commands {
+    background:var(--neutral-1);
+    }
+    &-commands{
+        padding: 0.6rem 0;
+        box-shadow: inset 0px -1px 0px #f5f5f5
+    }
+    
+    &-footerInner{
+        display: flex;
+        justify-content: space-between;
+        gap: 0.8rem;
+        button{
+            flex: 1 1 auto;
+        }
+    }
+}

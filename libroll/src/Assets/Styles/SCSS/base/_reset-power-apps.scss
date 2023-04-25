@@ -1,0 +1,32 @@
+// Reset PCF
+.harness-root > .navbar,
+div.container .io-pane,
+[data-id="topBar"],
+[data-id="navbar-container"] {
+  display: none;
+}
+.control-pane {
+  padding: 0;
+  flex: 100%;
+}
+.control-container {
+  border: 0;
+}
+select::-ms-expand {
+  display: none;
+}
+.harness-root {
+  > .container {
+    display: initial;
+  }
+}
+iframe {
+  border: none;
+}
+
+#publishedCanvasContainer{
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-family: inherit;
+}

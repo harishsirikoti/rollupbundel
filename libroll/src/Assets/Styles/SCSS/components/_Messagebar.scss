@@ -1,0 +1,41 @@
+/* 
+
+Message Toasters
+
+*/
+
+.ms-MessageBar {
+  font-weight: normal;
+  .ms-MessageBar-content{
+    padding: 4px;
+  }
+  &.ms-MessageBar--singleline {
+    background: var(--info);
+    background: var(--info-border);
+    color: #000000d9;
+  }
+
+  &.ms-MessageBar--warning {
+    background: var(--warning);
+    border: 1px solid var(--warning-border);
+    color: #614700;
+  }
+
+  &.ms-MessageBar--severeWarning {
+    background: var(--severeWarning);
+    border: 1px solid var(--severeWarning-border);
+    color: #610b00;
+  }
+
+  &.ms-MessageBar--error {
+    background: var(--error);
+    border: 1px solid var(--error-border);
+    color: #5c0011;
+  }
+
+  &.ms-MessageBar--success {
+    background: var(--success);
+    border: 1px solid var(--success-border);
+    color: #092b00;
+  }
+}

@@ -1,0 +1,40 @@
+.selection-list-control {
+    display: flex;
+
+    .left, .right  {
+        border: 1px solid #f0f0f0;
+        border-radius: 5px;
+        width: -webkit-fill-available;
+        min-width: 280px;
+        .list-header {
+            background-color: #f0f0f0;
+            .ms-Checkbox {
+                height: 48px;
+                display: flex;
+                align-items: center;
+                padding: 0 12px;
+                .ms-Checkbox-text {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .list-body {
+            .ms-Checkbox {
+                height: 48px;
+                display: flex;
+                align-items: center;
+                padding: 0 12px;
+                .ms-Checkbox-text {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .middle {
+        display: flex;
+        align-items: center;
+        padding: 0 8px;
+    }
+}

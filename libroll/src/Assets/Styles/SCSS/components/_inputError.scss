@@ -1,0 +1,34 @@
+/* 
+Error messages styles
+*/
+.errorMessage {
+  color: var(--error-required);
+  font-size: var(--fs-12);
+  font-weight: 400;
+  padding-top: 5px;
+}
+.errorGroup {
+  label::after {
+    content: " *";
+    color: var(--error-required);
+    padding-right: 12px;
+  }
+  .ms-PeoplePicker,
+  input[type="text"] {
+    border: 1px solid var(--error-required);
+    border-radius: var(--inputRadius);
+    min-height: var(--inputsMinHeight);
+  }
+}
+.errorGroupStar .ms-TextField-wrapper .ms-Label::after,
+.errorGroupStar label::after {
+  content: "*";
+  color: red;
+  padding-right: 12px;
+  margin-left: 4px;
+}
+.ms-TextField-errorMessage {
+  animation-fill-mode: none;
+}
+
+

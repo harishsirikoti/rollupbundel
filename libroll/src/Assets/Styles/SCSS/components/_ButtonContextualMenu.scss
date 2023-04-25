@@ -1,0 +1,19 @@
+.ms-ContextualMenu-item {
+  margin: 8px 10px;
+  .ms-ContextualMenu-link {
+    padding: 0 10px;
+    .ms-ContextualMenu-linkContent{
+      i.ms-ContextualMenu-icon{
+        color: inherit;
+      }
+    }
+    &:hover {
+      background: var(--primary-1);
+      color: var(--primary-7);
+      border-radius: var(--btn-border-radius);
+    }
+  }
+}
+.ms-Callout-main {
+  background: var(--neutral-1);
+}

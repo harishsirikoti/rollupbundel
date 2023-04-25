@@ -1,0 +1,428 @@
+.detailslistContainer {
+  border-radius: 5px;
+  width: 0px;
+  min-width: 100%;
+  //height: calc(100% - 63px);
+} 
+
+.ms-DetailsList {
+  border-radius: 5px !important;
+
+  .ms-DetailsList-contentWrapper {
+    overflow-x: inherit !important;
+    overflow-y: unset !important;
+  }
+}
+
+.details-list {
+  min-width: 100%;
+  max-width: 100%;
+  width: 0;
+  border-radius: 0;
+  .selectionDetails {
+    display: none;
+  }
+  .ms-Checkbox-label {
+    min-width: 0;
+  }
+  .ms-DetailsHeader {
+    padding-top: 0;
+    height: 55px;
+    border-radius: 0;
+    border-color: transparent;
+    background: var(--neutral-2);
+
+    .ms-DetailsHeader-cellIsCheck {
+      border-color: transparent;
+    }
+
+    .ms-DetailsRow-check,
+    .ms-DetailsHeader-check {
+      width: 32px;
+    }
+
+    .ms-DetailsHeader-cell {
+      height: 55px;
+
+      .ms-DetailsHeader-cellTitle {
+        display: flex;
+        height: 55px;
+        align-items: center;
+        border-color: transparent;
+        justify-content: space-between;
+        text-transform: capitalize;
+
+        .ms-Icon[data-icon-name^="Sort"] {
+          position: relative;
+          color: transparent;
+        }
+        &:hover {
+          .ms-Icon[data-icon-name^="Sort"] {
+            color: var(--neutral-9)
+            // &:before {
+            //   font-family: "Fabric External MDL2 Assets" !important;
+            //   content: "";
+            //   color: var(--neutral-9);
+            //   position: absolute;
+            // }
+          }
+        }
+      }
+    }
+
+    .ms-DetailsHeader-cellName {
+      color: var(--neutral-9);
+      font-weight: normal;
+      font-size: var(--fs-14);
+
+      &:hover {
+        color: var(--text-dark);
+      }
+    }
+  }
+
+  .ms-List {
+    .ms-DetailsRow-cell {
+      font-size: var(--fs-14);
+      color: var(--text-dark);
+      font-weight: normal;
+      height: 55px;
+      display: flex;
+      align-items: center;
+
+      a {
+        color: var(--primary-color);
+      }
+      .ms-DetailsRow-check,
+      .ms-DetailsHeader-check {
+        width: 32px;
+        // .ms-Check {
+        //   .ms-Check-circle {
+        //     font-family: "Fabric External MDL2 Assets";
+        //     content: "";
+
+        //   }
+        // }
+      }
+    }
+  }
+
+  &--no-background {
+    .ms-DetailsHeader {
+      background-color: transparent !important;
+    }
+
+    .ms-DetailsHeader-cellTitle {
+      background-color: transparent;
+    }
+
+    .ms-DetailsRow {
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    .ms-GroupHeader {
+      background-color: transparent;
+    }
+  }
+
+  &--even {
+    .ms-DetailsHeader-cellTitle {
+      background-color: transparent;
+    }
+
+    .ms-List-cell:nth-child(even) {
+      background-color: var(--neutral-2);
+    }
+  }
+
+  &--bordered {
+    .ms-DetailsHeader-cellTitle,
+    .ms-DetailsHeader-cellIsCheck {
+      border-bottom: 1px solid var(--neutral-2);
+    }
+
+    .ms-DetailsRow {
+      border-bottom: 1px solid var(--neutral-2);
+    }
+
+    .ms-GroupHeader {
+      background-color: var(--neutral-2);
+      border-bottom: 1px solid var(--neutral-2);
+    }
+  }
+
+  &--white {
+    .ms-DetailsHeader {
+      background-color: var(--bg-white);
+    }
+
+    .ms-DetailsHeader-cellTitle,
+    .ms-DetailsHeader-cellIsCheck {
+      background-color: var(--bg-white);
+    }
+
+    .ms-DetailsRow {
+      background-color: var(--bg-white);
+
+      &:hover {
+        background-color: var(--bg-white);
+      }
+    }
+
+    .ms-DetailsRow-cell:last-child,
+    .ms-DetailsHeader-cell:nth-last-child(-n + 2) {
+      background: var(--neutral-1);
+    }
+
+    .ms-GroupHeader {
+      background-color: var(--bg-white);
+    }
+  }
+
+  &--light-white {
+    .ms-DetailsHeader {
+      border: 1px solid var(--neutral-2);
+      border-radius: 2px;
+      opacity: 1;
+    }
+
+    .ms-DetailsHeader-cellTitle,
+    .ms-DetailsHeader-cellIsCheck {
+      background-color: var(--neutral-2);
+      background: var(--neutral-2) 0% 0% no-repeat padding-box;
+      box-shadow: inset -1px 0px 0px var(--neutral-2);
+    }
+
+    .ms-DetailsRow {
+      background-color: var(--neutral-2);
+
+      &:hover {
+        background-color: var(--neutral-2);
+      }
+    }
+
+    .ms-GroupHeader {
+      background-color: var(--neutral-2);
+    }
+
+    .ms-DetailsRow-cell:last-child,
+    .ms-DetailsHeader-cell:nth-last-child(-n + 2) {
+      background: var(--neutral-1);
+    }
+  }
+
+  &--sticky {
+    .ms-DetailsRow-cell:last-child,
+    .ms-DetailsHeader-cell:nth-last-child(-n + 2) {
+      position: sticky;
+      inset: 0;
+      z-index: 1;
+      box-shadow: -12px 0px 5px -1px #0000000f;
+      //max-width: 300px;
+      background-color: var(--neutral-1);
+      &[role="columnheader"] {
+        background-color: var(--neutral-2);
+      }
+    }
+  }
+  &--bordered-dark {
+    border: 1px solid var(--main-bg);
+    width: 0;
+    min-width: 100%;
+    max-width: 100%;
+    .ms-DetailsHeader {
+      border-bottom: 1px solid var(--main-bg);
+    }
+    .ms-DetailsHeader-cellTitle,
+    .ms-DetailsHeader-cellIsCheck {
+      border-bottom: 1px solid var(--main-bg);
+    }
+
+    .ms-DetailsRow {
+      border-bottom: 1px solid var(--main-bg);
+      .ms-DetailsRow-cellCheck {
+        border-right: 1px solid var(--main-bg);
+      }
+    }
+
+    .ms-GroupHeader {
+      background-color: var(--neutral-2);
+      border-bottom: 1px solid var(--main-bg);
+    }
+
+    .ms-DetailsHeader .ms-DetailsHeader-cell {
+      border-right: 1px solid var(--main-bg);
+      // border-bottom: 1px solid var(--main-bg);
+    }
+  }
+  &--grouped {
+    .ms-DetailsRow {
+      width: 100%;
+      .ms-GroupSpacer {
+        width: 0 !important;
+      }
+    }
+    .ms-DetailsHeader-cell:first-child {
+      background-color: transparent;
+      width: 0;
+      display: none;
+    }
+    .ms-DetailsHeader-cell:last-child .ms-DetailsHeader-cell:nth-last-child(-n + 1) {
+      border-right-color: transparent !important;
+    }
+    .ms-GroupHeader[role="row"] {
+      background-color: #f0f5ff;
+      max-height: 38px;
+      [role="presentation"] {
+        max-height: 38px;
+        width: inherit;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+    }
+    .ms-GroupHeader-expand {
+      background-color: transparent;
+    }
+  }
+  &--small {
+    .ms-DetailsHeader {
+      height: 39px;
+
+      .ms-DetailsHeader-cell {
+        height: 39px;
+
+        .ms-DetailsHeader-cellTitle {
+          height: 39px;
+        }
+      }
+    }
+
+    .ms-List {
+      .ms-DetailsRow-cell {
+        height: 39px;
+      }
+    }
+  }
+
+  &--medium {
+    .ms-DetailsHeader {
+      height: 47px;
+
+      .ms-DetailsHeader-cell {
+        height: 47px;
+
+        .ms-DetailsHeader-cellTitle {
+          height: 47px;
+        }
+      }
+    }
+
+    .ms-List {
+      .ms-DetailsRow-cell {
+        height: 47px;
+      }
+    }
+  }
+}
+
+.noResult {
+  min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: var(--neutral-4);
+  border: 1px solid;
+  flex: 1 1 auto;
+  height: 100%;
+  .nodataimg {
+    max-width: 300px;
+    padding: 10px;
+    filter: grayscale(1);
+  }
+}
+.noDataFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 1.6;
+  img,
+  svg {
+    max-width: 250px;
+    padding: 10px;
+    filter: grayscale(1);
+  }
+}
+
+
+// scroll inside table
+.ms-DetailsList {
+  border-radius: 5px;
+  .ms-DetailsList-contentWrapper {
+    overflow-x: inherit !important;
+    overflow-y: inherit !important; 
+  }
+  .ms-DetailsList-headerWrapper {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+}
+.noLayout-footer.layout-grid__main--container {
+  padding-bottom: 0;
+}
+
+// target page wise scroll
+.pendingDocuments {
+  .ms-DetailsList  .ms-DetailsList-contentWrapper {
+    height: calc(100vh - 382px);
+  }
+  .noLayout-footer.layout-grid__main--container {
+    height: calc(100vh - 240px);
+}
+}
+
+.requestType {
+  .ms-DetailsList .ms-DetailsList-contentWrapper {
+    height: calc(100vh - 388px);
+   
+  }
+ }
+
+.allDocs {
+  .ms-DetailsList .ms-DetailsList-contentWrapper {
+    height: calc(100vh - 388px);
+  }
+ }
+
+ .library-main-warpper {
+  .ms-DetailsList  .ms-DetailsList-contentWrapper {
+    height: calc(100vh - 398px);
+  }
+}
+
+.audit-card {
+  thead{
+    position: sticky;
+    z-index: 1;
+    height: 50px;
+    top: -16px;
+  }
+  tbody{
+    margin-top: 50px;
+  }
+  .pc__pagination{
+    position: sticky;
+    bottom: -16px;
+    z-index: 1;
+    margin: 0;
+  }
+}
+.docSetup{
+  .ms-DetailsList .ms-DetailsList-contentWrapper{
+   height: calc(100vh - 435px);
+  }
+}

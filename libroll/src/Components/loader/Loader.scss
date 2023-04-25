@@ -1,0 +1,18 @@
+.celitoloader {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    background: var(--menu-inactive);
+    left: 0;
+    top: 0; 
+  }
+  .celito-error-message{
+     z-index: 9999;
+  }
+  .loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }

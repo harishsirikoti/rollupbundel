@@ -1,0 +1,27 @@
+@use "../../abstracts/mixins" as *;
+
+.audit-trail-page { 
+  .layout-grid__main--container{
+    height: initial;
+    overflow: inherit;
+    div[role="tabpanel"] .expTable{
+      @include media-scroll(240px);
+      overflow-x: auto;
+      padding: 1rem 0;
+    }
+  }
+  .expTable tr span, .expTable td span, .expTable th span{
+    padding: 0.8rem;
+  }
+  .expTable button.icon-button::before{
+    font-weight: bold;
+    font-size: 0.8rem;
+    background: #f0f0f0;
+    padding: 6px;
+    border-radius: 2px;
+  }
+  .expTable .row-background-first span{
+    max-width: 98px;
+    overflow: hidden;
+  }
+}

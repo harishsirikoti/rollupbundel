@@ -1,0 +1,39 @@
+.filter-group {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid var(--neutral-4);
+    border: 1px solid #E8E8E8;
+    border-radius: 3px;
+    padding: 14px 12px;
+
+    &__title {
+        display: flex;
+        align-items: center;
+        font-size: var(--fs-14);
+        font-size: 14px;
+        font-weight: 600;
+        margin-right: 11px;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        .item {
+            height: 24px;
+            margin: 0 5px;
+            padding: 0 8px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .item-selected, .item:hover {
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: blue;
+            color: #FFFFFF;
+        }
+    }
+}

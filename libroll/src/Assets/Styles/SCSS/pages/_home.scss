@@ -1,0 +1,55 @@
+.charts-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .charts {
+        padding: 10px;
+        margin: 5px;
+        flex: 1;
+
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            margin: 0rem 0rem 1rem;
+
+            button.ms-Button--icon {
+                background-color: #FAFAFA;
+            }
+
+            h5 {
+                font-size: 16px;
+            }
+
+            span.ms-Button-flexContainer {
+                i.ms-Button-menuIcon {
+                    display: none;
+                }
+            }
+        }
+
+        .chart-view {
+            background-color: #FAFAFA;
+
+            .recharts-wrapper {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+            }
+        }
+
+    }
+}
+
+.full-view-chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA;
+    height: calc(100vh - 280px);
+    margin: 1rem;
+    border-radius: 0.5rem;
+}
+.full-chart-header{
+    margin: 1rem;
+}

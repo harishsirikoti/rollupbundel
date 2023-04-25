@@ -1,0 +1,177 @@
+/* 
+
+extra sizes of button className
+.primary
+.default
+.large
+.small
+.medium
+.secondary-gray
+*/
+
+.ms-Button {
+  &--icon {
+    &.primary {
+      background: var(--primary-7);
+      color: var(--primary-1);
+      font-size: var(--fs-14);
+      font-weight: normal;
+      border-radius: var(--btn-border-radius);
+      &:focus,
+      &:hover {
+        background-color: var(--primary-6);
+      }
+      &:active {
+        background-color: var(--primary-9);
+      }
+      &.is-disabled {
+        background: var(--neutral-3);
+        color: var(--neutral-6) !important;
+        opacity: 1 !important;
+      }
+    }
+
+    &.default {
+      background-color: rgba(var(--alpha), 0.9);
+      color: var(--primary-7);
+      font-size: var(--fs-16);
+      font-weight: normal;
+      border: none;
+      border-radius: var(--btn-border-radius);
+      &:focus,
+      &:hover {
+        background-color: var(--neutral-1);
+      }
+      &:active {
+        background-color: rgba(var(--alpha), 0.8);
+      }
+      &.is-disabled {
+        background: var(--neutral-6);
+        color: var(--neutral-3);
+        opacity: 1 !important;
+      }
+    }
+
+    // Ghost styles
+
+    &.secondary-gray {
+      background: var(--neutral-3);
+      color: var(--neutral-9);
+      &:focus,
+      &:hover {
+        background-color: var(--primary-1);
+        color: var(--primary-6);
+      }
+      &:active {
+        background-color: var(--primary-1);
+        color: var(--primary-9);
+      }
+
+      &.is-disabled {
+        background: var(--neutral-3);
+        color: var(--neutral-6) !important;
+        opacity: 1 !important;
+      }
+    }
+
+    // sizes of buttons
+    &.large {
+      height: 40px;
+      width: 40px;
+    }
+    &.medium {
+      height: 34px;
+    }
+    &.small {
+      height: 34px;
+    }
+    // Icon Images
+    &.imageIcon {
+      img {
+        margin-top: 13px;
+      }
+    }
+  }
+}
+
+// Buttons icons
+
+//i[data-icon-name="Delegate-icon"],
+ 
+i[data-icon-name]{
+  font-style:inherit
+}
+
+i[data-icon-name="Delegate-icon"]::before{
+  content: '';
+  font-family: "Fabric External MDL2 Assets";
+  font-style: inherit;
+}
+i[data-icon-name="reject-icon"]::before{
+  content: '';
+  font-family: "Fabric External MDL2 Assets";
+  font-style: inherit;
+}
+
+i[data-icon-name="update-icon"]::before{
+  content: '';
+  font-family: "Fabric External MDL2 Assets";
+  font-style: inherit;
+}
+i[data-icon-name="retire-icon"]::before{
+  content: '';
+  font-family: "Fabric External MDL2 Assets";
+  font-style: inherit;
+}
+i[data-icon-name="maintain-icon"]::before{
+  content: '';
+  font-family: "Fabric External MDL2 Assets";
+  font-style: inherit;
+}
+i[data-icon-name="approve-icon"]::before{
+  content: '';
+  font-family: "Fabric External MDL2 Assets";
+  font-style: inherit;
+}
+
+i[data-icon-name="ReturntoOwner-icon"]::before{
+  content: '';
+  font-family: "Fabric External MDL2 Assets";
+  font-style: inherit;
+}
+i[data-icon-name="SendforApproval-icon"]::before{
+  content: '';
+  font-family: "Fabric External MDL2 Assets";
+  font-style: inherit;
+}
+i[data-icon-name="CollaborationComplete-icon"]::before{
+  content: '';
+  font-family: "Fabric External MDL2 Assets";
+  font-style: inherit;
+}
+i[data-icon-name="DraftComplete-icon"]::before{
+  content: '';
+  font-family: "Fabric External MDL2 Assets";
+  font-style: inherit;
+}
+i[data-icon-name="EvaluationComplete-icon"]::before{
+  content: '';
+  font-family: "Fabric External MDL2 Assets";
+  font-style: inherit;
+}
+
+i[data-icon-name="Download-icon"]::before{
+  content: '';
+  font-family: "Fabric External MDL2 Assets";
+  font-style: inherit;
+}
+i[data-icon-name="Audit-Trail-icon"]::before{
+  content: '';
+  font-family: "Fabric External MDL2 Assets";
+  font-style: inherit;
+}
+i[data-icon-name="Version-History-icon"]::before{
+  content: '';
+  font-family: "Fabric External MDL2 Assets";
+  font-style: inherit;
+}

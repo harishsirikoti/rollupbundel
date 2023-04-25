@@ -1,0 +1,157 @@
+.multiGroup-nav {
+  .ms-Nav {
+    &-group {
+      border-radius: var(--border-radius);
+      background-color: var(--main-bg);
+      margin-bottom: 1rem;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='729.37' height='360.272' viewBox='0 0 729.37 360.272'%3E%3Cg id='Group_6383' data-name='Group 6383' transform='matrix(0.999  -0.035  0.035  0.999  0.01  25.415)' opacity='0.18'%3E%3Cpath id='Path_6154' data-name='Path 6154' d='M.005 41.617c67.069-.522 133.389 28.119 176.311 76.144 37.223 41.647 56.215 95.035 88.091 140.472s85.914 85.112 143.151 74.706c39.3-7.145 70.67-36.836 89.319-70.3S523.73 191.7 533.818 155.2s22.853-73.569 48.6-102.611c32.637-36.815 85.4-56.92 135.646-51.685' transform='translate(0 0)' fill='none' stroke='%23fff' stroke-width='0.8'/%3E%3Cpath id='Path_6155' data-name='Path 6155' d='M0 39.075c63.749-.5 126.787 26.346 167.588 71.362 35.383 39.038 53.438 89.082 83.741 131.673S333 321.888 387.4 312.128c37.351-6.7 67.169-34.537 84.891-65.91s25.518-66.5 35.1-100.714 21.716-68.966 46.185-96.193C584.6 14.8 634.75-4.055 682.509.849' transform='translate(17.783 0.117)' fill='none' stroke='%23fff' stroke-width='0.8'/%3E%3Cpath id='Path_6156' data-name='Path 6156' d='M0 36.533c60.427-.469 120.185 24.576 158.863 66.582 33.544 36.428 50.664 83.129 79.39 122.872s77.419 74.444 128.987 65.33c35.406-6.258 63.668-32.238 80.464-61.517s24.184-62.062 33.268-93.994 20.579-64.364 43.771-89.776c29.4-32.212 76.935-49.81 122.207-45.239' transform='translate(35.568 0.233)' fill='none' stroke='%23fff' stroke-width='0.8'/%3E%3Cpath id='Path_6157' data-name='Path 6157' d='M0 33.99c57.107-.442 113.583 22.8 150.139 61.8 31.7 33.818 47.888 77.176 75.04 114.074s73.171 69.109 121.9 60.641c33.459-5.814 60.166-29.938 76.037-57.125s22.848-57.624 31.43-87.271S474 66.347 495.913 42.751C523.694 12.84 568.618-3.5 611.4.735' transform='translate(53.351 0.351)' fill='none' stroke='%23fff' stroke-width='0.8'/%3E%3Cpath id='Path_6158' data-name='Path 6158' d='M0 31.448c53.787-.416 106.981 21.033 141.418 57.019 29.864 31.21 45.11 71.225 70.685 105.276s68.927 63.776 114.824 55.953c31.515-5.371 56.665-27.639 71.61-52.733s21.513-53.188 29.594-80.551 18.3-55.16 38.943-76.941C493.241 11.86 535.552-3.23 575.848.679' transform='translate(71.134 0.468)' fill='none' stroke='%23fff' stroke-width='0.8'/%3E%3C/g%3E%3C/svg%3E");
+      background-size: auto;
+      background-position: 35% 80%;
+      // button{
+      //   padding: 1rem;
+      //   box-sizing: content-box;
+      //   border-radius: 5px !important;
+      //   overflow: hidden;
+      // }
+      // &.is-selected{
+      //   button{
+      //     color: #fff;
+      //     background-color: var(--primary-7);
+      //   }
+      // }
+      .ms-Nav-chevronButton {
+        border-bottom: 0;
+        background-color: var(--neutral-2);
+        border-radius: var(--border-radius);
+        font-size: var(--fs-16);
+        i {
+          right: 0px;
+          left: inherit;
+        }
+      }
+
+      &.is-expanded {
+        border-radius: var(--border-radius);
+        background-color: var(--primary-8);
+        color: var(--neutral-1);
+        .ms-Nav-chevronButton {
+          color: var(--neutral-1);
+          background-color: transparent;
+        }
+        .ms-Nav-compositeLink a,
+        button,
+        .ms-Nav-compositeLink .ms-Nav-link {
+          color: var(--neutral-5);
+          background: transparent;
+          .ms-Icon {
+            color: transparent;
+          }
+
+          &:hover,
+          &:active,
+          &:visited,
+          &:focus {
+            background: transparent;
+            color: var(--neutral-1);
+            .ms-Icon {
+              //color: var(--neutral-1);
+              &:before {
+                color: var(--neutral-1);
+              }
+            }
+          }
+          .ms-Button-flexContainer {
+            justify-content: space-between;
+            flex-direction: row-reverse;
+          }
+        }
+        .ms-Nav-compositeLink {
+          i:before {
+            font-family: "Fabric External MDL2 Assets";
+            content: "";
+            position: absolute;
+            font-size: 0.8rem;
+          }
+          .ms-Button--action {
+            &[aria-label="active"] {
+              color: var(--neutral-1);
+              .ms-Icon {
+                //color: var(--neutral-1);
+                &:before {
+                  color: var(--neutral-1);
+                }
+              }
+            }
+            &[aria-label="inactive"] {
+              opacity: 0.8;
+            }
+          }
+          .ms-Button--action[data-is-focusable="true"][data-pa-landmark-active-element="true"] {
+            color: var(--neutral-1);
+            .ms-Icon {
+              //color: var(--neutral-1);
+              &:before {
+                color: var(--neutral-1);
+              }
+            }
+          }
+          &.is-selected button.ms-Button--action {
+            // background-color: var(--primary-7);
+            color: var(--neutral-1);
+            .ms-Icon {
+              //color: var(--neutral-1);
+              &:before {
+                color: var(--neutral-1);
+              }
+            }
+          }
+        }
+        .ms-Nav-groupContent {
+          background: rgb(34 34 34 / 40%);
+          margin-bottom: 1rem;
+          .ms-Nav-compositeLink{
+            button.ms-Button.ms-Button--command{
+              padding: 0 0.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.single-nav {
+  .ms-Nav-navItems {
+    .ms-Nav-navItem {
+      .ms-Nav-compositeLink {
+        .ms-Nav-link {
+          border-radius: var(--border-radius);
+          background-color: var(--main-bg);
+          margin-bottom: 1rem;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='729.37' height='360.272' viewBox='0 0 729.37 360.272'%3E%3Cg id='Group_6383' data-name='Group 6383' transform='matrix(0.999  -0.035  0.035  0.999  0.01  25.415)' opacity='0.18'%3E%3Cpath id='Path_6154' data-name='Path 6154' d='M.005 41.617c67.069-.522 133.389 28.119 176.311 76.144 37.223 41.647 56.215 95.035 88.091 140.472s85.914 85.112 143.151 74.706c39.3-7.145 70.67-36.836 89.319-70.3S523.73 191.7 533.818 155.2s22.853-73.569 48.6-102.611c32.637-36.815 85.4-56.92 135.646-51.685' transform='translate(0 0)' fill='none' stroke='%23fff' stroke-width='0.8'/%3E%3Cpath id='Path_6155' data-name='Path 6155' d='M0 39.075c63.749-.5 126.787 26.346 167.588 71.362 35.383 39.038 53.438 89.082 83.741 131.673S333 321.888 387.4 312.128c37.351-6.7 67.169-34.537 84.891-65.91s25.518-66.5 35.1-100.714 21.716-68.966 46.185-96.193C584.6 14.8 634.75-4.055 682.509.849' transform='translate(17.783 0.117)' fill='none' stroke='%23fff' stroke-width='0.8'/%3E%3Cpath id='Path_6156' data-name='Path 6156' d='M0 36.533c60.427-.469 120.185 24.576 158.863 66.582 33.544 36.428 50.664 83.129 79.39 122.872s77.419 74.444 128.987 65.33c35.406-6.258 63.668-32.238 80.464-61.517s24.184-62.062 33.268-93.994 20.579-64.364 43.771-89.776c29.4-32.212 76.935-49.81 122.207-45.239' transform='translate(35.568 0.233)' fill='none' stroke='%23fff' stroke-width='0.8'/%3E%3Cpath id='Path_6157' data-name='Path 6157' d='M0 33.99c57.107-.442 113.583 22.8 150.139 61.8 31.7 33.818 47.888 77.176 75.04 114.074s73.171 69.109 121.9 60.641c33.459-5.814 60.166-29.938 76.037-57.125s22.848-57.624 31.43-87.271S474 66.347 495.913 42.751C523.694 12.84 568.618-3.5 611.4.735' transform='translate(53.351 0.351)' fill='none' stroke='%23fff' stroke-width='0.8'/%3E%3Cpath id='Path_6158' data-name='Path 6158' d='M0 31.448c53.787-.416 106.981 21.033 141.418 57.019 29.864 31.21 45.11 71.225 70.685 105.276s68.927 63.776 114.824 55.953c31.515-5.371 56.665-27.639 71.61-52.733s21.513-53.188 29.594-80.551 18.3-55.16 38.943-76.941C493.241 11.86 535.552-3.23 575.848.679' transform='translate(71.134 0.468)' fill='none' stroke='%23fff' stroke-width='0.8'/%3E%3C/g%3E%3C/svg%3E");
+          background-size: auto;
+          background-position: 35% 80%;
+          color: var(--neutral-9);
+          height: 62px;
+        }
+        &.is-selected button.ms-Button--action {
+          background-color: var(--primary-7);
+          color: var(--neutral-1);
+          .ms-Icon {
+            color: var(--neutral-1);
+          }
+        }
+      }
+
+      .ms-Nav-chevronButton {
+        border-bottom: 0;
+        background-color: var(--main-bg);
+        border-radius: var(--border-radius);
+        i {
+          right: 16px;
+          left: inherit;
+        }
+      }
+    }
+  }
+}

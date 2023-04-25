@@ -1,0 +1,21 @@
+.ChoiceGroup {
+  display: flex;
+  gap: 10px;
+  .choicebtn {
+    input[type="radio"] {
+      max-width: 30px;
+      height: 17px;
+      margin: 0 8px;
+    }
+    display: inline-flex;
+    width: inherit;
+    //max-width: 60px;
+    align-items: center;
+    margin-right: 16px;
+  }
+  label.choicebtn {
+    &:after {
+      display: none;
+    }
+  }
+}

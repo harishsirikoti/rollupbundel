@@ -1,0 +1,12 @@
+.font {
+    @for $i from 1 through 64 {
+        &--size-#{$i} {
+            font-size: #{$i}px;
+        }
+    }
+    @for $i from 100 through 1000 {
+        &--weight-#{$i} {
+            font-weight: #{$i};
+        }
+    }
+}

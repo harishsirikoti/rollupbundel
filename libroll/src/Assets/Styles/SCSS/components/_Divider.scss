@@ -1,0 +1,19 @@
+.HDivider{
+    height: 1px;
+    border-top: 1px solid var(--neutral-9);
+    display: flex;
+    width: 100%;
+    &.dashed{
+        border-top: 1px dashed var(--neutral-9);
+    }
+} 
+
+.vDivider {
+    height: 100%;
+    width: 1px;
+    border-left: 1px solid var(--neutral-9);
+    display: flex;
+    &.dashed{
+        border-left: 1px dashed var(--neutral-9);
+    }
+} 

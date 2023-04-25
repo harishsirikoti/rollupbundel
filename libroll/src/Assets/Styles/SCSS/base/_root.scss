@@ -1,0 +1,90 @@
+@use "../abstracts/type" as *;
+
+:root {
+  --text-color: #fff;
+  --menu-inactive: #adc6ff;
+  --menu-active: #f9f0ff;
+  --footer-background: #f0f0f0;
+
+  --btn-border-radius: 0.357rem;
+  --border-radius: 0.357rem;
+  --input-border-radius:0.357rem;
+  --inputRadius: 0.357rem;
+  --inputsMinHeight: 40px;
+  --inputsLineHeight: 20px;
+
+  --primary-color: #1d39c4;
+  --primary-hover-color: rgba(22, 78, 226, 0.05);
+
+  --bg-white: #fff;
+  --bg-light-white: #f7f7f7d7;
+  --text-white: #fff;
+  --bg-white-light: #f0f5ff;
+  --bg-white-light-2: #dddddd;
+
+  --bg-dark: #222222;
+  --text-dark: #222222;
+  --text-dark-light: #444444fa;
+
+  --border-color: #e0e0e0;
+  --input-bg-color: #f0f0f0;
+
+  --action-color: #164ee2;
+  --action-color-hover: rgb(22, 78, 226, 0.05);
+  --action-bg: #164ee20d;
+  --input-bg: #164ee20d;
+
+  --label-color: #808080;
+
+  --green-bg: #e3f7e3;
+  --green-color: #68c53e;
+  --footer-green-color-bg: #D9F7BE;
+  --footer-warning-bg: #FFD8BF;
+  --footer-danger-bg: #FFCCC7;
+  --error-required: rgb(164, 38, 44);
+  --cancel-color-bg:var(--primary-1);
+  --line-border-color: #22222214;
+  --heading-color: #9a9a9afa;
+  --delete-red: #CF1322;
+
+
+  --btn-radius: 8px;
+  --light-white-bg: #fafafa;
+
+  --info-color: #0836c10d;
+
+  --info: #f5f5f5;
+  --info-border: #e8e8e8;
+  --warning: #feffe6;
+  --footer-warning: #FF7A45;
+  --warning-border: #fffb8f;
+  --severeWarning: #fff2e8;
+  --severeWarning-border: #ffd8bf;
+  --error: #fff1f0;
+  --error-border: #ffccc7;
+  --success: #f6ffed;
+  --footer-success: #52C41A;
+  --success-border: #d9f7be;
+  --denger: #e02020;
+  --inactive: #808080;
+  --light-gray: #f0f0f0;
+  --alpha: 255, 255, 255;
+
+  --icon-neutral: #222222;
+  --icon-neutral-background: #fafafa;
+  --icon-active: #2548F7;
+  --icon-active-background: #2548F70D;
+
+    // font size
+    @each $screen-size,
+    $property in $type-scale {
+    @each $prop, $value in $property {
+      --fs-#{$prop}: #{$value};
+    }
+  }
+
+  // font weight
+  @each $font-weight, $property in $weight-scale {
+    --fw-#{$font-weight}: #{$font-weight};
+  }
+}

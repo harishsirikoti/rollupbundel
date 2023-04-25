@@ -1,0 +1,42 @@
+.item_drag {
+  height: 46px;
+  align-items: center;
+  display: flex;
+  box-shadow: inset 0px -1px 0px #f5f5f5;
+  padding-left: 26px;
+  position: relative;
+  cursor: grab;
+  &:before {
+    content: "";
+    font-family: "Fabric External MDL2 Assets";
+    position: absolute;
+    left: 0;
+  }
+}
+
+.ms-Checkbox-checkbox {
+  border: 1px solid var(--neutral-5);
+  border-radius: var(--border-radius);
+}
+
+.ms-Checkbox-text {
+  text-transform: capitalize;
+  color: var(--neutral-8);
+}
+
+
+.sortings-container{
+  .ms-Panel-content{
+    gap: 0.6rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .ms-ChoiceFieldGroup-flexContainer{
+    display: flex;
+    gap: 1rem;
+  }
+  .ms-List-page{
+    box-shadow: inset 0px -8px 0px #f5f5f5;
+    padding-bottom: 0.6rem;
+  }
+}

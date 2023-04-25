@@ -1,0 +1,51 @@
+/* 
+
+Command Bar classNames
+ 
+
+*/
+
+// Button dropdown
+.ms-Button {
+  &--commandBar, &--command, &--icon, &--default{
+    &.secondary {
+      background: var(--primary-1);
+      color: var(--primary-7);
+      border:1px solid var(--primary-2);
+      &:focus,
+      &:hover {
+        background-color: var(--primary-2);
+      }
+      &:active {
+        background-color: var(--primary-2);
+      }
+
+      &.is-disabled {
+        background: var(--neutral-3);
+        color: var(--neutral-6) !important;
+        opacity: 1 !important;
+      }
+    }
+
+    // Default buttons styles
+    &.secondary-default {
+      background-color: rgba(var(--alpha), 0.2);
+      color: var(--primary-1);
+      border:none;
+      &:focus,
+      &:hover {
+        background-color: rgba(var(--alpha), 0.3);
+        color: var(--primary-1);
+      }
+      &:active {
+        background-color: rgba(var(--alpha), 0.1);
+      }
+
+      &.is-disabled {
+        background: var(--neutral-6);
+        color: var(--neutral-3);
+        opacity: 1 !important;
+      }
+    }
+  }
+}

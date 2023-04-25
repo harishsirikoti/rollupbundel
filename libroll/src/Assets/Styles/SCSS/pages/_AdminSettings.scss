@@ -1,0 +1,585 @@
+@use "../abstracts/mixins" as *;
+
+.admin-settings {
+  .ms-DetailsHeader {
+    background: var(--neutral-2);
+    padding-top: 0;
+  }
+  .layout-grid__sidebar {
+    h5 {
+      margin-bottom: 0.8rem;
+    }
+    .layout-grid__sidebar--scroll{
+      height: calc(100vh - 260px);
+    }
+  }
+  .layout-grid__main--header{
+    h4{
+      font-size: var(--fs-20);
+      
+    }
+  }
+  .pagination.pagination--no-border{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+} 
+
+.admin-settings .layout-grid__main .user-profile .layout-grid__main{
+  .userProfile-1 {
+    .ms-FocusZone.ms-Pivot{
+      margin: 0px;
+      padding: 0rem;
+    }
+  }
+}
+.admin-settings {
+  .userProfile-1 {
+    .ms-Spinner{
+      display: flex;
+    align-items: center;
+    position: absolute;
+    // left: 60%;
+    left:45%;
+    top: 45%;
+    }
+  }
+}
+
+.page-main-wrapper.reports-page{
+  .layout-grid__sidebar--scroll{
+    height: calc(100vh - 240px);
+  }
+}
+
+.user-profile .layout-grid__main--container {
+  @include media-scroll(390px);
+}
+.permission-groups .layout-grid__main--container,
+.document-setup .layout-grid__main--container {
+  @include media-scroll(350px);
+}
+
+.document-configuration .layout-grid__main--container,
+.holiday-details .layout-grid__main--container {
+  @include media-scroll(294px);
+}
+.email-notification .layout-grid__main--container{
+  @include media-scroll(360px);
+}
+.task-page .layout-grid__main--container {
+  @include media-scroll(350px);
+}
+.email-temp .layout-grid__main--container {
+  @include media-scroll(304px);
+  overflow: auto;
+}
+
+.emailTem-1
+  .email-temp-wrapper{
+    height: initial; 
+}
+
+.companyLogo{
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  img{
+    max-width: 120px;
+  }
+}
+// Admin Navigation
+.adminSettingsNav {
+  .ms-Nav-group > button {
+    padding-left: 46px;
+    &:before {
+      width: 30px;
+      height: 30px;
+      border-radius: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      content: "";
+      background-size: contain !important;
+    }
+    i {
+      color: transparent;
+      transform: none;
+      &:before {
+        font-family: "Fabric External MDL2 Assets";
+        content: "";
+        color: #222;
+      }
+    }
+  }
+  .is-expanded.ms-Nav-group {
+    > button i:before {
+      font-family: "Fabric External MDL2 Assets";
+      content: "";
+      color: #fff;
+    }
+  }
+}
+
+.user-profile {
+  // .layout-grid__main--container{
+  //   height: inherit;
+  // }
+  .page-main-wrapper{
+    padding: 0 10px;
+  }
+  .ms-DetailsList.is-horizontalConstrained.details-list {
+    height: calc(100vh - 425px);
+    overflow-x: auto;
+    overflow-y: auto;
+}
+  .layout-grid__main--header {
+    // padding: 1.6rem 0.5rem;
+    padding: 1.2rem 0.5rem;
+    h4 {
+      margin:0;
+      padding: 0;
+    }
+    .title{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      
+      label.ms-Label{
+        font-size: var(--fs-20);
+      }
+    }
+    
+  }
+  .layout-grid__main--container.userProfile-1{
+    padding: 0.5rem 26px;
+    height: calc(100vh - 409px);
+
+    .ms-DetailsList-headerWrapper{
+      span.ms-DetailsHeader-cellName{
+        font-weight: 600;
+      }
+    }
+  }
+ 
+  .filter-group {
+    .filter-group__items .item label.ms-Label{
+      font-weight: normal;
+    }
+  }
+}
+
+.permission-groups{
+  .page-main-wrapper{
+    padding: 0;
+  }
+  .layout-grid__main--header {
+    span {
+      font-size: var(--fs-20);
+      padding: 0.6rem 0 0;
+     display: block; 
+     line-height: var(--fs-20);
+     label.layout-header{
+      padding: 0 5px;
+     }
+    }
+  }
+
+  .layout-grid__main--container.teamProfile-1{
+    .ms-DetailsList-headerWrapper{
+      span.ms-DetailsHeader-cellName{
+        font-weight: 600;
+      }
+    }
+  }
+  .layout-grid__main--container.teamProfile-1{
+    // height: inherit;
+    height: calc(100vh - 300px);
+    overflow-x: inherit;
+    overflow-y: inherit;
+  }
+  .user-grid{
+    .ms-DetailsList.details-list--sticky {
+    height: calc(100vh - 365px);
+    overflow-x: auto;
+    overflow-y: auto;
+    }
+  }
+}
+.tasks-1 .ms-DetailsList .ms-DetailsList-contentWrapper{
+  height: calc(100vh - 350px);
+}
+.holidayDetails .ms-DetailsList .ms-DetailsList-contentWrapper{
+  height: calc(100vh - 350px);
+}
+.emailNotification-1 .ms-DetailsList .ms-DetailsList-contentWrapper{
+  height: calc(100vh - 400px);
+  .noLayout-footer.layout-grid__main--container{
+    height: calc(100vh - 285px);
+  }
+}
+.emailnotification .emailContent-1 .submit{
+  margin-top: 25px;
+  width: 95px;
+}
+.page-main-wrapper.admin-settings{
+  .email-notification{
+    .layout-grid{
+      .layout-grid__main{
+        .layout-grid__main--container.padding-2-t.noLayout-footer.emailNotification-1{
+          height: calc(100vh - 300px);
+        }
+      }
+    }
+  }
+}
+.holidayDetails .layout-grid__main--container .padding-2-t.noLayout-footer{
+  overflow: hidden !important;
+}
+.firstname-class.font-500{
+  font-weight: var(--fw-500);;
+}
+
+.versionHistory > .layout-grid__main.grid.grid--row {
+  > .layout-grid__main--container {
+    @include media-scroll(172px);
+    .layout_editor {
+      display: flex;
+      height: 100%;
+      .editor.iframeEditor {
+        flex: 1 1 auto;
+        iframe {
+          flex: 1 1 auto;
+          position: initial;
+          width: 100%;
+          height: 100%;
+          padding: 0;
+        }
+      }
+    }
+  }
+  .layout_sidepanel {
+    .card-body .card-item {
+      max-width: 100%;
+      .selection-div__check {
+        min-width: 20px;
+      }
+      .ms-Label {
+        font-weight: normal;
+      }
+    }
+  }
+}
+.admin-settings .layout-grid__main .layout-grid__main--container.docConfig-1{
+  padding: 0;
+}
+.admin-settings .layout-grid__main .layout-grid__main--container.docSetup{
+  padding: 0;
+}
+.admin-settings {
+  .layout-grid__main {
+    .layout-grid__main--header {
+      h5 {
+        // margin: 0.8rem 0 0;
+        // padding: 0 1rem;
+      }
+    }
+    .ms-Pivot[role="tablist"] {
+      margin: 0 1rem;
+      padding: 0 1rem;
+      > .ms-Button {
+        color: #222;
+        font-weight: 600;
+        &:hover{
+          background: transparent;
+          color: var(--primary-7);
+        }
+        &.is-selected{
+          color: var(--primary-7) !important; 
+        }
+      }
+    }
+    .layout-grid__main--container.documentRequest-1 {
+      height: calc(100vh - 345px);
+    }
+    .layout-grid__main--container.docConfig-1 {
+      height: initial;
+
+      .ms-FocusZone.ms-Pivot{
+        margin: 0;
+      }
+    }
+  }
+   
+
+  // .document-setup, .document-configuration{
+  //   h5, .ms-Fabric{
+  //     margin: 0 1rem;
+  //   }
+  // }
+
+  // .task-page, .email-notification, .emailTemp,.theme-branding,.holiday-details{
+  //   h5, .layout-grid__main--container{
+  //     //margin: 0 1rem;
+  //   }
+  //   .layout-grid__main--header.grid--space-between{
+  //     .flex-start{
+  //      // margin: 0 1rem;
+  //     }
+  //   }
+  // }
+  // .layout-grid__main--container.taskname-1{
+  //   margin: 0;
+  //   h5{
+  //     margin: 0;
+  //   }
+  // }
+  // .holiday-details{
+  //   .layout-grid__main--container.holiday-1,
+  //   .layout-grid__main--container.HolidayName{
+  //     margin: 0;
+  //   }
+  // }
+
+  // .docConfig-1{
+  //   div.ms-FocusZone.ms-Pivot{
+  //     margin: 0 1rem !important;
+  //   }
+  //   div.ms-Fabric{
+  //     margin: 0 1rem;
+  //   }
+  // }
+  .ms-Fabric {
+    // padding: 1rem;
+    > div[class^="css-"] {
+      height: auto;
+      width: auto;
+    }
+    .ms-FocusZone {
+      padding: 0;
+    }
+    .ms-ScrollablePane {
+      position: initial;
+      inset: inherit;
+      height: calc(100vh - 336px);
+      width: 100%;
+      border: 1px solid #f0f0f0;
+      border-radius: 5px;
+      overflow: auto;
+      .ms-ScrollablePane--contentContainer {
+        position: inherit;
+        overflow: initial;
+        inset: initial;
+      }
+    }
+    .ms-CommandBar {
+      border: 1px solid #f0f0f0;
+      background: #fafafa;
+    }
+    .ms-FocusZone .ms-OverflowSet .ms-Button {
+      color: initial;
+      background: inherit;
+    }
+  }
+}
+
+.rdw-editor-wrapper{
+  border: 1px solid var(--neutral-5);
+}
+.emailContent-1 .rdw-editor-main{
+  height: calc(100vh - 520px) !important;
+  padding: 0 1rem;
+}
+
+// global search css 
+.search-result .filter-btn {
+  padding: 0px 15px;
+  h2{
+  font-size: 24px;
+}
+}
+.advance-filter-popup .search-result {
+  .result-sets{
+    max-height: 400px;
+  }
+}
+.search-div{
+  .search-content{
+    padding: 0 20px;
+  }
+}
+.ms-DatePicker{
+  width: 100%;
+  //padding: 0px 10px;
+  .ms-TextField-field{
+    line-height: 40px;
+  }
+}
+
+.document-setup, .document-configuration, .admin-settings{
+  .layout-grid__main--header h5{
+    font-size: var(--fs-20);
+    margin: 0.4rem 0 0rem;
+    line-height: 28px;
+  }
+}
+.email-temp .layout-grid__main--container, 
+.layout-grid__main--container.emailTem-1{
+  padding-top: 0;
+}
+.holiday-details .noLayout-footer.layout-grid__main--container{
+  @include media-scroll(310px); 
+}
+.admin-settings{
+  .page-main-wrapper{
+    padding: 0;
+  }
+  .layout-grid__main--header,
+  .layout-grid__main--container,
+  .layout-grid__main--footer
+  {
+    padding-left: 1.6rem;;
+    padding-right: 1.6rem;
+  }
+  .admin-settings .ms-Fabric{
+    padding: 0.5rem 1.6rem;
+  } 
+  
+      .layout-grid__sidebar {
+        .adminSettingsNav{
+          button.ms-Nav-link{
+            .ms-Nav-linkText{
+              text-transform: initial;
+            }
+          }
+        }
+      }        
+}
+.layout-grid__main--container.teamProfile-1{
+  .user-grid{
+    height: calc(100vh - 330px);
+    overflow-x: auto;
+    overflow-y: auto;
+    .ms-DetailsList.is-horizontalConstrained.details-list.details-list--large.details-list--bordered-dark.details-list--sticky{
+      .ms-DetailsList-contentWrapper{
+        .ms-List-page{
+          .ms-List-cell{
+            .ms-DetailsRow{
+              .ms-DetailsRow-cell span{
+                color: inherit;
+              }
+            }
+          }
+        }
+      }
+    }
+    .selection-list-control{
+      .left,.right{
+        height: 250px;
+        overflow: auto
+      }
+      .middle{
+        display: block;
+        margin: auto;
+        button{
+          border: 1px solid #f0f0f0;
+          margin: 5px 0px;
+        }
+      }
+    }
+  }
+}
+.docConfig-1{
+  .ms-Fabric{
+    padding: 0 1.6rem;
+  }
+}
+
+.permissionGroup-loader{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 45% !important;
+  top: 40%;
+}
+
+.userProfile-loader{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 45% !important;
+  top: 50%;
+}
+
+.documentSetUp-loader{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 58% !important;
+  top: 45%;
+}
+
+.documentType-loader{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 58% !important;
+  top: 45%;
+}
+
+.documentData-loader{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 58% !important;
+  top: 45%;
+  // display: none;
+}
+.admin-settings .layout-grid__main .docSetup .ms-Pivot[role=tablist]{
+  padding-left: 0;
+}
+
+.user-profile .ms-GroupHeader{
+  .ms-GroupHeader-expand {
+    transform: rotate(0deg);
+  }
+  .ms-GroupHeader-expand.is-collapsed{
+      transform: rotate(-270deg);
+    }
+  }
+
+.admin-settings{
+  .email-notification{
+    .ms-MessageBar.ms-MessageBar-multiline{
+      position: absolute;
+      max-width: 600px;
+      right: 1.8rem;
+      top: -4.5rem;
+    }
+  }
+}
+
+.as-layout{
+  .as-data-grid{
+    height: calc(100vh - 280px);
+   .ms-DetailsList.is-horizontalConstrained {
+    height: calc(100vh - 410px);
+   }
+  }
+   .layout-grid__main--container.as-form{
+    height: calc(100vh - 355px);
+   }
+}
+.layout-grid__main--container.as-doc-templates{
+  height: calc(100vh - 280px);
+  .ms-DetailsList-contentWrapper{
+    height: calc(100vh - 450px);
+  }
+}
+.DocumentCopy{
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,67 @@
+
+// datepicker
+.ms-TextField-field {
+    align-items: center;
+  }
+  [class^="monthPickerWrapper-"] {
+    button[class^="itemButton-"] {
+      line-height: 100%;
+      border-radius: 100%;
+      &:not(:disabled) {
+        border: 1px solid transparent;
+        &:hover {
+          border: 1px solid var(--primary-7);
+          background: transparent; 
+          color: var(--primary-7);
+        }
+      }
+      &[aria-selected="true"] {
+        background: var(--primary-7);
+        color: var(--primary-1);
+      }
+    }
+  }
+  .ms-DatePicker {
+    div[class^="root-"] {
+      padding: 0;
+    }
+    div[class^="header-"] {
+      span {
+        color: var(--primary-7);
+      }
+    }
+  
+    [class^="dayCell-"] {
+      line-height: 100%;
+      &:hover {
+        background-color: transparent;
+        button {
+          border: 1px solid var(--primary-7);
+          border-radius: 100%;
+          color: var(--primary-7);
+        }
+      }
+    }
+    .ms-CalendarDay-dayIsToday {
+      border: 1px solid var(--primary-7);
+      border-radius: 100%;
+      color: var(--primary-7) ;
+      background: transparent ;
+      button {
+        border: 1px solid var(--primary-7);
+        border-radius: 100%;
+        background: transparent ;
+      }
+    }
+    .ms-CalendarDay-daySelected {
+      background-color: transparent ;
+      button {
+        background-color: var(--primary-7);
+        border-radius: 100%;
+        color: var(--primary-1);
+      }
+      &:before {
+        border: none;
+      }
+    }
+  }

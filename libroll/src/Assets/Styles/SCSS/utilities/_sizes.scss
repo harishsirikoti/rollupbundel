@@ -1,0 +1,69 @@
+@use "../abstracts" as *;
+
+
+/* 
+Example class name
+.margin-8-t
+.margin-10-b
+
+.padding-8-t
+.padding-8-b
+
+.padding-8-tb
+.padding-8-lr
+
+.padding-8-l
+.padding-8-r
+
+
+
+*/
+@each $size-name, $size-value in $sizes {
+  .margin {
+    &-#{$size-name} {
+      margin: $size-value;
+      &-t {
+        margin-block-start: $size-value  !important;
+      }
+      &-b {
+        margin-block-end: $size-value !important;
+      }
+      &-tb {
+        margin-block: $size-value !important;
+      }
+      &-l {
+        margin-inline-start: $size-value !important;
+      }
+      &-r {
+        margin-inline-end: $size-value !important;
+      }
+      &-lr {
+        margin-inline: $size-value !important;
+      }
+    }
+  }
+  .padding {
+    &-#{$size-name} {
+      padding: $size-value;
+
+      &-t {
+        padding-block-start: $size-value !important;
+      }
+      &-b {
+        padding-block-end: $size-value !important;
+      }
+      &-tb {
+        padding-block: $size-value !important;
+      }
+      &-l {
+        padding-inline-start: $size-value !important;
+      }
+      &-r {
+        padding-inline-end: $size-value !important;
+      }
+      &-lr {
+        padding-inline: $size-value !important;
+      }
+    }
+  }
+}

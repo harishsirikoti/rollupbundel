@@ -1,0 +1,65 @@
+/* 
+
+Command Bar classNames
+ .primary-outline
+ .default-outline
+*/
+
+// Button dropdown
+.ms-Button {
+  &--commandBar, &--command, &--icon {
+    border-radius: var(--btn-border-radius);
+    &.primary-outline {
+      background: rgba(var(--alpha), 0);
+      border: 1px solid var(--primary-7);
+      color: var(--primary-7);
+
+      &:focus,
+      &:hover {
+        background: rgba(var(--alpha), 0.4);
+        border-color: var(--primary-6);
+      }
+      &:active {
+        border-color: var(--primary-9);
+      }
+      &.is-disabled {
+        border-color: var(--neutral-5);
+        color: var(--neutral-6) !important;
+        opacity: 1 !important;
+      }
+      &.is-disabled {
+        background: var(--neutral-3);
+        color: var(--neutral-6) !important;
+        opacity: 1 !important;
+      }
+    }
+
+    &.default-outline {
+      background: rgba(var(--alpha), 0);
+      border: 1px solid var(--neutral-5);
+      color: var(--primary-1);
+      &:focus,
+      &:hover {
+        background: rgba(var(--alpha), 0.2);
+        border-color: var(--neutral-6);
+      }
+      &:active {
+        background: rgba(var(--alpha), 0);
+        border-color: var(--neutral-6);
+      }
+      &.is-disabled {
+        border-color: var(--neutral-5);
+        color: var(--neutral-6) !important;
+        opacity: 1 !important;
+      }
+      &.dashed {
+        border: 1px dashed var(--neutral-5);
+      }
+      &.is-disabled {
+        background: var(--neutral-6);
+        color: var(--neutral-3);
+        opacity: 1 !important;
+      }
+    }
+  }
+}

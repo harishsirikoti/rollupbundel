@@ -1,0 +1,13 @@
+/* 
+
+Page specific styles, it is better to put them in a page/ folder
+if any sppecific styles for home page hence the need for a file in page/ folder
+
+*/
+
+@forward "./home"; 
+@forward "./CDR/library"; 
+@forward "./CDR/CreateControlDocs"; 
+@forward "./LMS/user-training";
+@forward "./AdminSettings";
+@forward "./CDR/AuditTrail";

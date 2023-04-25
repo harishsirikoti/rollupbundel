@@ -1,0 +1,71 @@
+.quickMenu {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    cursor: pointer;
+    &:hover {
+        border-radius: var(--btn-border-radius);
+        background-color: rgb(255 255 255 / 16%);
+    }
+    .ms-Persona-imageArea .ms-Persona-initials {
+        background: transparent;
+        border: 1px solid var(--neutral-1);
+        color: var(--neutral-1);
+        span {
+            text-transform: initial;
+            font-size: 90%;
+            padding: initial;
+            // line-height: inherit;
+            display: initial;
+            word-break: initial;
+            font-weight: initial;
+        }
+    }
+}
+
+.signoutCallout {
+    width: 320px;
+    max-width: 90%;
+    padding: 0px 20px 20px;
+    .ms-Callout-beakCurtain {
+        background: var(--neutral-1);
+    }
+    .ms-Callout-main {
+        min-height: 120px;
+    }
+    .ms-Persona-imageArea .ms-Persona-initials {
+        background: transparent;
+        border: 1px solid var(--neutral-9);
+        color: var(--neutral-9);
+        span {
+            text-transform: initial;
+            font-size: initial;
+            padding: initial;
+            line-height: inherit;
+            // display: initial;
+            word-break: initial;
+            font-weight: initial;
+        }
+    }
+}
+.companyinfo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 16px;
+    align-items: center;
+
+    h6 {
+        font-size: var(--fs-14);
+        font-weight: normal;
+    }
+}
+
+.confrimDialog .ms-Dialog-main{
+    border-radius: 5px;
+}
+.signout-popup{
+    .ms-Dialog-title{
+        display: block !important;
+    }
+}
